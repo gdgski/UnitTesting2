@@ -29,3 +29,7 @@ class MathUtils:
   def multiply(a: int | float, b : int | float) -> int | float:
     return a * b
 
+  @staticmethod
+  def exponent(a: int | float, b: int | float) -> int | float:
+    return a ** b
+

@@ -41,5 +41,16 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(MathUtils.multiply(2, -1), -2)
         self.assertEqual(MathUtils.multiply(-2, -1.5), 3)
 
+    def test_exponent(self):
+        """
+        Check for exponent, incorporated negative numbers and decimals.
+        """
+        self.assertEqual(MathUtils.exponent(4, 2), 16)
+        self.assertEqual(MathUtils.exponent(2, 3), 8)
+        self.assertEqual(MathUtils.exponent(3, 4), 81)
+        self.assertEqual(MathUtils.exponent(6, 2), 36)
+
+
+
 
 
