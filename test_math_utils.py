@@ -51,6 +51,18 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(MathUtils.exponent(6, 2), 36)
 
 
+    def test_radical(self):
+        """
+        Check for radical, incorporated negative numbers and decimals.
+        """
+        self.assertEqual(MathUtils.radical(4, 2), 2)
+        #self.assertEqual(MathUtils.radical(-4, 2), )
+        with self.assertRaises(ValueError) as context:
+            MathUtils.radical(-4, 2)
+        self.assertEqual(MathUtils.radical(8, 3), 2)
+        self.assertEqual(MathUtils.radical(-27, 3), -3)
+
+
 
 
 

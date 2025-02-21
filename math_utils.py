@@ -33,3 +33,10 @@ class MathUtils:
   def exponent(a: int | float, b: int | float) -> int | float:
     return a ** b
 
+  @staticmethod
+  def radical(a: int | float, b: int | float) -> int | float:
+    if a < 0 and b % 2 == 0:
+      return ValueError("You can not squar rote a value less than 0!!!")
+
+
+
